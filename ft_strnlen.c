@@ -6,15 +6,15 @@
 /*   By: ageorgey <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/25 19:16:44 by ageorgey          #+#    #+#             */
-/*   Updated: 2018/11/25 19:16:47 by ageorgey         ###   ########.fr       */
+/*   Updated: 2018/12/03 18:41:23 by ageorgey         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strnlen(char *str, char c)
+size_t			ft_strnlen(char *str, char c)
 {
-	int	i;
+	int			i;
 
 	i = 0;
 	if (str == NULL)
