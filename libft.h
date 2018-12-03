@@ -6,7 +6,7 @@
 /*   By: ageorgey <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/17 14:43:54 by ageorgey          #+#    #+#             */
-/*   Updated: 2018/12/03 19:10:56 by ageorgey         ###   ########.fr       */
+/*   Updated: 2018/12/03 19:13:00 by ageorgey         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,6 @@ void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 size_t				ft_strnlen(char *str, char c);
-size_t				ft_memnlen(char *s, char c);
+size_t				ft_memnlen(void *s, char c);
 
 #endif
