@@ -6,7 +6,7 @@
 /*   By: ageorgey <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/17 14:43:54 by ageorgey          #+#    #+#             */
-/*   Updated: 2018/12/03 19:13:00 by ageorgey         ###   ########.fr       */
+/*   Updated: 2018/12/17 13:19:49 by ageorgey         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,18 @@
 # include <sys/stat.h>
 # include <fcntl.h>
 
+typedef struct		s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}					t_list;
+void				ft_lstadd(t_list **lst, t_list *new);
+void				ft_lstdel(t_list **lst, void (*del)(void *, size_t));
+void				ft_lstdelone(t_list **lst, void (*del)(void *, size_t));
+void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+t_list				*ft_lstnew(const void *content, size_t content_size);
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
 void				*ft_memcpy(void *dst, const void *src, size_t n);
