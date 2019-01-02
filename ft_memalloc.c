@@ -12,14 +12,11 @@
 
 #include "libft.h"
 
-void	*ft_memalloc(size_t size)
+void			*ft_memalloc(size_t size)
 {
-	size_t	i;
-	char	*j;
+	char		*str;
 
-	i = 0;
-	if (!(j = (char*)malloc(size)))
-		return (NULL);
-	ft_bzero(j, size);
-	return (j);
+	str = ft_strnew(size);
+	ft_bzero(str, size);
+	return (str);
 }

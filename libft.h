@@ -88,5 +88,7 @@ size_t				ft_strnlen(char *str, char c);
 size_t				ft_memnlen(void *s, char c);
 size_t				ft_countchar(const char *str, int c);
 void				ft_struntil(const char *str, int c);
+size_t				ft_intlen(int nbr, size_t base);
+char				*ft_itoa_base(int nbr, size_t base);
 
 #endif
